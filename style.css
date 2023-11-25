@@ -130,6 +130,9 @@ font-weight: 800;
 line-height: 18px; /* 112.5% */
 text-transform: uppercase;
 }
+.error{
+    display: none;
+}
 .error>p{
     color: #625BF7;
 text-align: center;
@@ -164,4 +167,92 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+
+.afterSubmit{
+    
+    width: 444px;
+    height: 537px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 30px;
+    gap: 20px;
+position: absolute;
+}
+.profile>p{
+    display: flex;
+width: 340px;
+height: 37px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #333;
+text-align: center;
+font-family: Mulish;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.succesfullmsg{
+   display: none;
+width: 340px;
+height: 37px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #625BF7;
+text-align: center;
+font-family: Mulish;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: absolute;
+top: 0px;
+
+}
+.profile>img{
+    margin-left: 110px;
+}
+.signup-info{
+    
+margin-left: -60px;
+}
+.signup-info>p{
+    color: #333;
+text-align: center;
+font-family: Mulish;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#logout{
+    display: flex;
+width: 352px;
+height: 55.804px;
+padding: 9px 14px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 6px;
+background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+color: #FFF;
+font-family: Mulish;
+font-size: 16px;
+font-style: normal;
+font-weight: 800;
+line-height: 18px; /* 112.5% */
+text-transform: uppercase;
+margin-left: 20px;
+margin-top: 40px;
 }
