@@ -10,10 +10,30 @@ function displayData(info) {
     const signupemail = document.getElementById("signup-email");
     const signuppass = document.getElementById("signup-password");
     const noacc=document.querySelector("noacc");
+    const tokens=document.getElementById("signup-token");
+//token generator function
+let token = '';
+function generateToken(length) {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    
+  
+    for (let i = 0; i < length; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      token += characters.charAt(randomIndex);
+    }
+  
+    return token;
+  }
+  
+  // Usage example: Generate a token of length 10
+   generateToken(5);
+ 
+  
 
     signupname.innerText = info.name;
     signupemail.innerText = info.email;
     signuppass.innerText = info.password;
+    tokens.innerHTML=token;
 
     if (form.checkValidity()) {
         if (info.password === info.confirmpass) {
